@@ -38,7 +38,7 @@ It combines **network monitoring**, **host-based file monitoring**, and **active
     python3 -m venv venv
     source venv/bin/activate   # For macOS/Linux 
     ```
----
+
 3. **Install Required Dependencies**
     ```bash
     pip install -r requirements.txt
@@ -57,7 +57,7 @@ It combines **network monitoring**, **host-based file monitoring**, and **active
 ```bash
 sudo python3 IDPS.py
 ```
-
+---
 ##  Future Improvements
 
 - Implement **machine learning–based anomaly detection**.  
