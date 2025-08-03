@@ -27,23 +27,23 @@ It combines **network monitoring**, **host-based file monitoring**, and **active
 ---
 ## Installation & Setup
 
-1. **Clone the Repository**
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/CryptoCrusaderX/Intrusion-Prevention-System-IPS-.git
    cd Intrusion-Prevention-System-IPS-
    ```
 
-2. **Create and Activate a Virtual Environment (Recommended)**
+2. **Create and Activate a Virtual Environment (Recommended):**
     ```bash
     python3 -m venv venv
     source venv/bin/activate   # For macOS/Linux 
     ```
 
-3. **Install Required Dependencies**
+3. **Install Required Dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-4. **Configure macOS Firewall for Dynamic Blocking**
+4. **Configure macOS Firewall for Dynamic Blocking:**
     - Add the following line to `/etc/pf.conf`:
         ```bash
         anchor "com.idps.block"
@@ -53,7 +53,7 @@ It combines **network monitoring**, **host-based file monitoring**, and **active
         sudo pfctl -f /etc/pf.conf
         sudo pfctl -e
         ```
-5. **Run the Application**
+5. **Run the Application:**
 ```bash
 sudo python3 IDPS.py
 ```
