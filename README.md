@@ -1,4 +1,4 @@
-# SurakshaNet: Intrusion Detection & Prevention System (IDPS)
+# SurakshaNet: Intrusion  Prevention System (IPS)
 
 SurakshaNet is a **real-time Intrusion Detection and Prevention System (IDPS)** developed in **Python** for **macOS**.  
 It combines **network monitoring**, **host-based file monitoring**, and **active IP blocking** into a lightweight application with a **modern GUI**.
