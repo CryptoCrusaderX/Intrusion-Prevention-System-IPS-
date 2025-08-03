@@ -9,7 +9,6 @@ from watchdog.events import FileSystemEventHandler
 import threading
 
 
-# ==================== FIREWALL MANAGER (macOS pfctl) ====================
 class MacOSFirewall:
     def __init__(self):
         self.blocked_ips = set()
@@ -55,7 +54,6 @@ class MacOSFirewall:
             self.blocked_ips.clear()
 
 
-# ==================== FILE MONITORING ====================
 class FileMonitorHandler(FileSystemEventHandler):
     """Detects file system events and pushes alerts to a queue."""
 
@@ -70,7 +68,6 @@ class FileMonitorHandler(FileSystemEventHandler):
             )
 
 
-# ==================== NETWORK SNIFFER ====================
 def packet_sniffer(queue, stop_event, suspicious_ips, iface="en0"):
     """Capture packets and report normal traffic."""
 
@@ -88,7 +85,6 @@ def packet_sniffer(queue, stop_event, suspicious_ips, iface="en0"):
     )
 
 
-# ==================== THREADING UTILITY FOR UNIT TEST ====================
 def start_sniffer_thread(queue, stop_event, suspicious_ips, iface="en0"):
     """Utility for running sniffer in a background thread for tests."""
     thread = threading.Thread(
