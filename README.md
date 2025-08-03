@@ -43,7 +43,7 @@ It combines **network monitoring**, **host-based file monitoring**, and **active
     ```bash
     pip install -r requirements.txt
     ```
-4. **Configure macOS Firewall for Dynamic Blocking
+4. **Configure macOS Firewall for Dynamic Blocking**
     - Add the following line to `/etc/pf.conf`:
         ```bash
         anchor "com.idps.block"
